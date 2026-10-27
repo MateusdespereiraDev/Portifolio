@@ -1,0 +1,96 @@
+
+
+/*CORES
+Preto esverdeado
+#0B120B
+Fundo principal
+
+Verde floresta
+#165914
+Cards e seções
+
+Verde intenso
+#078C03
+Botões e elementos ativos
+
+Verde vibrante
+#6AF266
+Links, ícones e destaques
+
+Verde gelo
+#D3FFD1
+Textos claros e detalhes
+*/
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B120B;
+    color: white;
+    font: 400 1em "Quattrocento Sans";
+    /* Foco para navegação por teclado */
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+a:hover{
+    color: #6AF266;
+    outline: 2px solid #6AF266;
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+#top > h1{
+    display: inline-block;
+    margin-right: 50px;
+}
+h1{
+   
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+nav > h2 {
+    font-size: 1em;
+    margin: 0px 20px 0px 0px;
+}
+
+section{
+   
+    background-color: #102510;
+    
+    padding: 10px;
+    outline: 3px solid black;
+}
+section.dados{
+    margin: 20px;
+}
+
+section#skill > section{
+    outline: 0;
+    display: inline-block;
+}
+
+
+footer a:hover {
+    color: #6AF266;
+    text-decoration: underline;
+}
+
+
+

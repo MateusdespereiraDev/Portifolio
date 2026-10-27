@@ -6,50 +6,69 @@
     <title>Portifólio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logoMSP.ico" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans:ital@0;1&display=swap');
+    </style>
 </head>
 <body>
     <header>
-        <h1>Mateus de Souza Pereira</h1>
-        <img src="logoMSP_200.png" alt="Meu Logo">
-        <h2>Sobre</h2>
-        <h2>Formação</h2>
-        <h2>Skills</h2>
-        <h2>Projetos</h2>
-        <h2 class="curriculo">Currículo</h2>
+        <section id="top">
+            <h1>Mateus de Souza Pereira</h1>
+             <img src="logoMSP_200.png" alt="Logo MSP" class="logo">
+            <nav>
+                <h2><a href="#sobre">Sobre</a></h2>
+                <h2><a href="#formacao">Formação</a></h2>
+                <h2><a href="#skill">Skills</a></h2>
+                <h2><a href="#projetos">Projetos</a></h2>
+                <h2 id="curriculo">Currículo</h2>
+            </nav>
+        </section>
     </header>
     <main>
-        <div class="sobre">
+        <section id="sobre"  class="dados">
             <h2>Mateus de Souza Pereira</h2> 
-            <p>Desenvolver Júnior, Estudante da Ánalise e Desenvolvimento de Sistemas, Mais de 1 ano de experiência em desenvolvimento web, automações em python</p>
-        </div>
-        <div class="formacao">
+            <p>Desenvolvedor Júnior, Estudante da Ánalise e Desenvolvimento de Sistemas, Mais de 1 ano de experiência em desenvolvimento web, automações em python</p>
+        </section>
+        <section id="formacao" class="dados">
             <h2>Formação</h2>
-            <p>Ánalise e Desenvolvimento de Sistemas (Uniaselvi)</p>
-        </div>
+            <p>Análise e Desenvolvimento de Sistemas (Uniaselvi)</p>
+        </section>
         
-        <div class="skill">
+        <section id="skill" class="dados">
             <h2>Skills</h2>
-            <h3>Fromt-end</h3>
-            <p>HTML <br> CSS <br> JavaScript</p>
-            <h3>Back-end</h3>
-            <p>Python <br> MySQL <br> API REST</p>
-            
-        </div>
+            <section>
+                <h3>Front-end</h3>
+                <p>HTML <br> CSS <br> JavaScript</p>
+            </section>
+            <section>
+                <h3>Back-end</h3>
+                <p>Python <br> MySQL <br> API REST</p>
+            </section>
+        </section>
 
-        <div class="projetos">
+        <section id="projetos" class="dados">
             <h2>Projetos</h2>
             <h3>Sistema de Controle e Gestão de Gado</h3>
             <p>Um sistema desenvolvido para gestão das cabeças de gado nas fazendas, utilizando banco de dados para monitorar peso do gado da entrada no campo até sua venda, sendo possível ver o lucro e ganho por dia do gado</p>
-        </div>
+        </section>
         
     </main>
 
     <footer>
-        <p>© 2026 Mateus de Souza Pereira — @mateusdespereira</p>  
-        <a href="https://www.instagram.com/mateusdespereira">Instagram</a>
-        <a href="https://github.com/MateusdespereiraDev">GitHub</a>
-        <a href="https://www.linkedin.com/in/mateus-pereiradev/">LinkeDin</a>
-        
+        <p>© 2026 Mateus de Souza Pereira</p>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/mateusdespereira"
+               target="_blank" rel="noopener noreferrer">Instagram</a>
+
+            <a href="https://github.com/MateusdespereiraDev"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+
+            <a href="https://www.linkedin.com/in/mateus-pereiradev/"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
