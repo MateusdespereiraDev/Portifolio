@@ -45,4 +45,35 @@ const observer = new IntersectionObserver(
 );
  
 secoes.forEach((secao) => observer.observe(secao));
+
+// ===== Copiar e-mail (página de contato) =====
+const status = document.getElementById("copy-status");
+
+document.querySelectorAll("[data-copy]").forEach((botao) => {
+    const textoOriginal = botao.textContent;
+
+    botao.addEventListener("click", async () => {
+        const valor = botao.dataset.copy;
+
+        try {
+            await navigator.clipboard.writeText(valor);
+        } catch {
+            // Plano B: abrir o arquivo direto do disco (file://) bloqueia a API acima
+            const campo = document.createElement("textarea");
+            campo.value = valor;
+            document.body.appendChild(campo);
+            campo.select();
+            document.execCommand("copy");
+            campo.remove();
+        }
+
+        botao.textContent = "Copiado!";
+        if (status) status.textContent = "E-mail copiado para a área de transferência.";
+
+        setTimeout(() => {
+            botao.textContent = textoOriginal;
+            if (status) status.textContent = "";
+        }, 2000);
+    });
+});
  

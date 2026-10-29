@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
+    <meta name="description" content="Projetos de Mateus de Souza Pereira em Python e automação.">
+    <meta name="theme-color" content="#0B120B">
+    <title>Projetos | Mateus de Souza Pereira</title>
+
+    <link rel="shortcut icon" href="imagens/logoMSP.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
  
     <header class="site-header" id="top">
         <div class="header-inner">
-            <a href="#top" class="brand">
+            <a href="index.html" class="brand">
                 <img src="imagens/logoMSP_200.png" alt="Logo MSP" class="logo" width="44" height="44">
                 <span>Mateus de Souza Pereira</span>
             </a>
@@ -22,16 +31,18 @@
  
             <nav aria-label="Navegação principal">
                 <ul id="menu">
-                    <li><a href="index.html">Sobre</a></li>
-                    <li><a href="index.html">Formação</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#formacao">Formação</a></li>
                     <li><a href="habilidades.html">Skills</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="projetos.html" aria-current="page">Projetos</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="curriculo.pdf" class="nav-cta" target="_blank" rel="noopener">Currículo</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <main id="conteudo">
     <section id="projetos" class="card-section">
             <h2>Projetos</h2>
             <div class="projects-grid">
@@ -77,5 +88,12 @@
                 </article>
             </div>
         </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="ano">2026</span> Mateus de Souza Pereira</p>
+    </footer>
+ 
+    <script src="script.js"></script>
 </body>
 </html>
